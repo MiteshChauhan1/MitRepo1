@@ -72,7 +72,7 @@ If($StartorStop -ieq "Stop")
                     }
                 else
                     {
-                $VM.Name + " Has failed to shut down. Shutdown Status  = " + $VMState
+                $VM.Name + " Shutdown has been triggered. Check VM. Current Status  = " + $VMState
                     }
                 }
             }
@@ -101,7 +101,7 @@ elseif($StartorStop -ieq "Start")
                        }
                     else
                        {
-                    $VM.Name + " Has failed to start.  Status  = " + $VMState
+                    $VM.Name + " Startup initiated. Check VM.  Current Status  = " + $VMState
                        }
                     }
                }
